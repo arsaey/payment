@@ -1,0 +1,15 @@
+{
+    "name": "blognevis/payments",
+    "autoload": {
+        "psr-4": {
+            "Blognevis\\Payments\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Saeedeh",
+            "email": "a.r.s.a.ey@gmail.com"
+        }
+    ],
+    "require": {}
+}
