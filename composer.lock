@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "31ba0b1c66cbcde8d4e4248b405a63ae",
+    "content-hash": "c072b6791df923915b70d1e0b4ba625a",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -336,7 +336,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "plisio/plisio-sdk-laravel",
+                "url": "./plisio/plisio-sdk-laravel",
                 "reference": "ad6d5a48eb0507df843795a6262a6fc9e5391e9e"
             },
             "require": {
@@ -375,8 +375,8 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "prevailexcel/laravel-nowpayments",
-                "reference": "5ed5b38b6876f00926abf69f0443a1c8d9f7ddad"
+                "url": "./prevailexcel/laravel-nowpayments",
+                "reference": "01f90bdff83a4657703c276e6d7d8351a23fbf79"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.0.1"
@@ -638,7 +638,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "saeedpooyanfar/zarinpal",
+                "url": "./saeedpooyanfar/zarinpal",
                 "reference": "857da393026b98a31a61c044b3ff2414930763d8"
             },
             "require": {
@@ -682,25 +682,25 @@
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "v2.5.3",
+            "version": "v3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "80d075412b557d41002320b96a096ca65aa2c98d"
+                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/80d075412b557d41002320b96a096ca65aa2c98d",
-                "reference": "80d075412b557d41002320b96a096ca65aa2c98d",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
+                "reference": "0e0d29ce1f20deffb4ab1b016a7257c4f1e789a1",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=8.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.5-dev"
+                    "dev-main": "3.5-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -729,7 +729,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/v2.5.3"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.5.0"
             },
             "funding": [
                 {
@@ -745,7 +745,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-24T14:02:46+00:00"
+            "time": "2024-04-18T09:32:20+00:00"
         }
     ],
     "packages-dev": [],
