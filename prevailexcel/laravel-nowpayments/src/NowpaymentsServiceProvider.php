@@ -42,9 +42,7 @@ class NowpaymentsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('laravel-nowpayments', function () {
-
             return new Nowpayments;
-
         });
     }
 
