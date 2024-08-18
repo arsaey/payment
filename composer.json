@@ -17,15 +17,15 @@
     "repositories": [
         {
             "type": "path",
-            "url": "prevailexcel/laravel-nowpayments"
+            "url": "./prevailexcel/laravel-nowpayments"
         },
         {
             "type": "path",
-            "url": "plisio/plisio-sdk-laravel"
+            "url": "./plisio/plisio-sdk-laravel"
         },
         {
             "type": "path",
-            "url": "saeedpooyanfar/zarinpal"
+            "url": "./saeedpooyanfar/zarinpal"
         }
     ],
     "require": {
