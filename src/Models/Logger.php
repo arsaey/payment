@@ -1,6 +1,6 @@
 <?php
 
-namespace PrevailExcel\Nowpayments\Models;
+namespace Blognevis\Payments;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -20,6 +20,6 @@ class Logger extends Model
   protected $fillable = [
     'endpoint', 'count'
   ];
-  protected $table = 'nowpayments_api_call_logger';
-  public $timestamps = false;
+  protected $table = 'payments_logger';
+
 }

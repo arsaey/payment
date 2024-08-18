@@ -54,23 +54,12 @@ class NowpaymentsServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function registerDashboard()
-    {
-        
-    }
-
     /**
      * Register the dashboard gate.
      *
      * @return void
      */
-    protected function registerDashboardGate()
-    {
-        Gate::define('viewNowpaymentsDashboard', function ($user = null) {
-            return $this->app->environment('local');
-        });
-    }
-
+   
 
     /**
     * Get the services provided by the provider

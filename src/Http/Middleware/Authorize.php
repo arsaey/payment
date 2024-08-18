@@ -24,7 +24,7 @@ class Authorize
      */
     public function handle($request, $next)
     {
-        return Gate::check('viewNowpaymentsDashboard', [$request->user()])
+        return Gate::check('viewPaymentsDashboard', [$request->user()])
             ? $next($request)
             : abort(403);
     }

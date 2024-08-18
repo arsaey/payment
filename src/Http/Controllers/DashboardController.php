@@ -2,9 +2,9 @@
 
 namespace PrevailExcel\Nowpayments\Http\Controllers;
 
+use Blognevis\Payments\Logger as PaymentsLogger;
 use Illuminate\Http\Request;
-use PrevailExcel\Nowpayments\Facades\Nowpayments;
-use PrevailExcel\Nowpayments\Models\Logger;
+use PrevailExcel\Nowpayments\Logger;
 
 /*
  * This file is part of the Laravel NOWPayments package.
@@ -19,9 +19,7 @@ class DashboardController
 {
     public function __invoke(Request $request)
     {
-        $payments = Nowpayments::getListOfPayments("limit=200")['data'];
-        $logs = Logger::get();
-        $version = Nowpayments::VERSION;
-        return view('nowpayments::dashboard', compact('payments', 'logs', 'version'));
+        $logs = PaymentsLogger::get();
+        return view('payments::dashboard', compact('logs'));
     }
 }

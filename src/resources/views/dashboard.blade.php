@@ -68,8 +68,8 @@
             <div class="navbar-header">
 
                 <a href="#" class="navbar-brand">
-                    <span class="visible-xs">Laravel NOWPayments</span>
-                    <span class="hidden-xs">Laravel NOWPayments</span>
+                    <span class="visible-xs">Laravel Payments</span>
+                    <span class="hidden-xs">Laravel Payments</span>
                 </a>
 
                 <p class="navbar-text">
@@ -99,51 +99,7 @@
                             <div class="panel panel-primary border">
                                 <div class="panel-body">
                                     <h5>Enviroment: <b
-                                            style="text-transform: capitalize">{{ config('nowpayments.env') }}</b></h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-9">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                    <h4><b>Payment List</b></h4>
-                                </div>
-                                <div class="panel-body">
-                                    <div class="table-responsive">
-                                        <table id="pList" class="table table-sm table-hover table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Payment ID</th>
-                                                    <th scope="col">Order ID</th>
-                                                    <th scope="col">Original Price</th>
-                                                    <th scope="col">Amount Sent</th>
-                                                    <th scope="col">Amount Received</th>
-                                                    <th scope="col">Status</th>
-                                                    <th scope="col">Address</th>
-                                                    <th scope="col">Created at</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                @forelse($payments as $pay)
-                                                    <tr>
-                                                        <th scope="row">{{ $pay['payment_id'] }}</th>
-                                                        <td>{{ $pay['order_id'] }}</td>
-                                                        <td>{{ $pay['price_amount'] }} {{ $pay['price_currency'] }}</td>
-                                                        <td>{{ $pay['pay_amount'] }} {{ $pay['pay_currency'] }}</td>
-                                                        <td>{{ $pay['outcome_amount'] }} {{ $pay['outcome_currency'] }}
-                                                        </td>
-                                                        <td>{{ $pay['payment_status'] }}</td>
-                                                        <td>{{ $pay['pay_address'] }}</td>
-                                                        <td>{{ Carbon\Carbon::parse($pay['created_at'])->format('d M Y, H:i A') }}
-                                                        </td>
-                                                    </tr>
-                                                @empty
-                                                    <div class="alert alert-info">No Payments initiated yet</div>
-                                                @endforelse
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                            style="text-transform: capitalize">{{ config('payments.nowpayments.env') }}</b></h5>
                                 </div>
                             </div>
                         </div>
@@ -162,17 +118,6 @@
                                 </ul>
                             </div>
 
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    What's New in Laravel NOWPayments
-                                </div>
-                                <div class="panel-body">
-                                    Docs here on <a href="https://github.com/PrevailExcel/laravel-nowpayments"
-                                        target="_blank">Github</a><br>
-                                    Version: v{{ $version }} <br>
-                                    <a href="https://www.buymeacoffee.com/prevail" target="_blank">Buy Me A Coffee</a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </section>

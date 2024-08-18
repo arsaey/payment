@@ -4,14 +4,6 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-/*
- * This file is part of the Laravel NOWPayments package.
- *
- * (c) Prevail Ejimadu <prevailexcellent@gmail.com>
- *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
- */
 
 class CreatePaymentsLoggerTable extends Migration
 {
@@ -24,8 +16,10 @@ class CreatePaymentsLoggerTable extends Migration
     {
         Schema::create('payments_logger', function (Blueprint $table) {
             $table->id();
-            $table->string('endpoint');
-            $table->integer('count')->default(0);
+            $table->string('gateway');
+            $table->string('status');
+            $table->string('amount');
+            $table->timestamps();
         });
     }
 

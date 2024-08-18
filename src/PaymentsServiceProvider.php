@@ -2,6 +2,7 @@
 
 namespace Blognevis\Payments;
 
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 use PrevailExcel\Nowpayments\Facades\Nowpayments;
 use Plisio\PlisioSdkLaravel\Payment;
@@ -12,7 +13,7 @@ class PaymentsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->singleton('nowpayments', function () {
-            return  Nowpayments::getFacadeRoot();
+            return Nowpayments::getFacadeRoot();
         });
 
         $this->app->singleton('plisio', function () {
@@ -23,16 +24,19 @@ class PaymentsServiceProvider extends ServiceProvider
             return app(Zarinpal::class);
         });
 
-        $this->mergeConfigFrom(__DIR__.'/config/payments.php', 'payments');
+        $this->mergeConfigFrom(__DIR__ . '/config/payments.php', 'payments');
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
-        $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
-        $this->loadViewsFrom(__DIR__.'/resources/views/','payments');
+        $this->loadRoutesFrom(__DIR__ . '/routes/routes.php');
+        $this->loadViewsFrom(__DIR__ . '/resources/views/', 'payments');
+        Gate::define('viewPaymentsDashboard', function ($user = null) {
+            return request()->get('dashboard_key') == config('payments.dashboard_key');
+        });
     }
 
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/payments.php' => config_path('payments.php'),
+            __DIR__ . '/config/payments.php' => config_path('payments.php'),
         ], 'config');
     }
 }
