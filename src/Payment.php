@@ -29,7 +29,7 @@ class Payment
         }
     }
 
-    public function pay($amount, $data)
+    public function pay($data)
     {
         return $this->gateway($this->gateway)->pay($data);
     }
@@ -38,4 +38,5 @@ class Payment
     {
         return $this->gateway($this->gateway)->verify($data);
     }
+    
 }

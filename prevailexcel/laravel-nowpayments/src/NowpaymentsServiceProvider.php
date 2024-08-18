@@ -2,8 +2,7 @@
 
 namespace PrevailExcel\Nowpayments;
 
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Gate;
+
 use Illuminate\Support\ServiceProvider;
 
 /*
@@ -30,10 +29,6 @@ class NowpaymentsServiceProvider extends ServiceProvider
     */
     public function boot()
     {
-      
-        $this->registerDashboard();
-
-
     }
 
     /**

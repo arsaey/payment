@@ -260,7 +260,7 @@ class Nowpayments
      *   @param $currency_to
      *   @return array
      * 
-     */
+     **/
     public function getMinimumPaymentAmount($currency_from, $currency_to = null, $fiat_equivalent = null): array
     {
         if (!$currency_from) {
