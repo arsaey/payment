@@ -4,9 +4,33 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitad855187ac2fcd4baddbaf6e7cd3e745
+class ComposerStaticInit31ba0b1c66cbcde8d4e4248b405a63ae
 {
+    public static $files = array (
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '7c85b489815bd8b5ec4256895b1d300d' => __DIR__ . '/..' . '/prevailexcel/laravel-nowpayments/utils/helpers/nowpayments.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'Z' => 
+        array (
+            'Zarinpal\\' => 9,
+        ),
+        'P' => 
+        array (
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Http\\Client\\' => 16,
+            'PrevailExcel\\Nowpayments\\' => 25,
+            'Plisio\\PlisioSdkLaravel\\' => 24,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+            'GuzzleHttp\\Promise\\' => 19,
+            'GuzzleHttp\\' => 11,
+        ),
         'B' => 
         array (
             'Blognevis\\Payments\\' => 19,
@@ -14,6 +38,39 @@ class ComposerStaticInitad855187ac2fcd4baddbaf6e7cd3e745
     );
 
     public static $prefixDirsPsr4 = array (
+        'Zarinpal\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/saeedpooyanfar/zarinpal/src',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+        ),
+        'Psr\\Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-client/src',
+        ),
+        'PrevailExcel\\Nowpayments\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/prevailexcel/laravel-nowpayments/src',
+        ),
+        'Plisio\\PlisioSdkLaravel\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/plisio/plisio-sdk-laravel/src',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'GuzzleHttp\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
         'Blognevis\\Payments\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
@@ -27,9 +84,9 @@ class ComposerStaticInitad855187ac2fcd4baddbaf6e7cd3e745
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitad855187ac2fcd4baddbaf6e7cd3e745::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitad855187ac2fcd4baddbaf6e7cd3e745::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitad855187ac2fcd4baddbaf6e7cd3e745::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit31ba0b1c66cbcde8d4e4248b405a63ae::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit31ba0b1c66cbcde8d4e4248b405a63ae::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit31ba0b1c66cbcde8d4e4248b405a63ae::$classMap;
 
         }, null, ClassLoader::class);
     }

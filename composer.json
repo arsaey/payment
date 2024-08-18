@@ -5,11 +5,30 @@
             "Blognevis\\Payments\\": "src/"
         }
     },
-    "authors": [
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Blognevis\\Payments\\PaymentsServiceProvider"
+            ]
+        }
+    },
+    "repositories": [
         {
-            "name": "Saeedeh",
-            "email": "a.r.s.a.ey@gmail.com"
+            "type": "path",
+            "url": "prevailexcel/laravel-nowpayments"
+        },
+        {
+            "type": "path",
+            "url": "plisio/plisio-sdk-laravel"
+        },
+        {
+            "type": "path",
+            "url": "saeedpooyanfar/zarinpal"
         }
     ],
-    "require": {}
+    "require": {
+        "prevailexcel/laravel-nowpayments": "dev-main",
+        "plisio/plisio-sdk-laravel": "dev-main",
+        "saeedpooyanfar/zarinpal": "dev-main"
+    }
 }
