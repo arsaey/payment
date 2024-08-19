@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'path' => 'laravel-payments',
+    'dashboard_key' => 'password'
     'zarinpal' => [
         /*
     |--------------------------------------------------------------------------
@@ -100,18 +102,6 @@ return [
          *
          */
         'callbackUrl' => env('NOWPAYMENTS_CALLBACK_URL'),
-    
-        /**
-         * Your URL Path
-         *
-         */
-        'path' => 'laravel-nowpayments',
-    
-        /**
-         * You can add your custom middleware to access the dashboard here
-         *
-         */
-        'middleware' => null, // "Authorise::class",
     
         /**
          * Your Nowpayment email here

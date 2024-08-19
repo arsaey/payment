@@ -28,9 +28,11 @@ class PaymentsServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
         $this->loadRoutesFrom(__DIR__ . '/routes/routes.php');
         $this->loadViewsFrom(__DIR__ . '/resources/views/', 'payments');
+
         Gate::define('viewPaymentsDashboard', function ($user = null) {
             return request()->get('dashboard_key') == config('payments.dashboard_key');
         });
+
     }
 
     public function boot()
