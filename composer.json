@@ -1,6 +1,6 @@
 {
     "name": "blognevis/payments",
-    "description":"a combination of nowpayments plisio zarinpal",
+   "description":"a combination of nowpayments plisio zarinpal",
     "autoload": {
         "psr-4": {
             "Blognevis\\Payments\\": "src/"
@@ -17,7 +17,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "prevailexcel2/laravel-nowpayments"
+            "url": "prevailexcel/laravel-nowpayments"
         },
         {
             "type": "path",
