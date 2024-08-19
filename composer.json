@@ -17,7 +17,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "./prevailexcel/laravel-nowpayments-local"
+            "url": "./prevailexcel2/laravel-nowpayments-local"
         },
         {
             "type": "path",
