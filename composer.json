@@ -17,15 +17,15 @@
     "repositories": [
         {
             "type": "path",
-            "url": "prevailexcel/laravel-nowpayments-local"
+            "url": "./prevailexcel/laravel-nowpayments-local"
         },
         {
             "type": "path",
-            "url": "plisio/plisio-sdk-laravel-local"
+            "url": "./plisio/plisio-sdk-laravel-local"
         },
         {
             "type": "path",
-            "url": "saeedpooyanfar/zarinpal-local"
+            "url": "./saeedpooyanfar/zarinpal-local"
         }
     ],
     "require": {

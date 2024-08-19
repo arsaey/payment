@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b48c099cfd3939ce2566b55fd2fcc6fc",
+    "content-hash": "313c9a97f226a1fc35f11fad8af47aca",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -336,7 +336,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "plisio/plisio-sdk-laravel-local",
+                "url": "./plisio/plisio-sdk-laravel-local",
                 "reference": "869089a8fdc3c5e86f30779c1caa728594c39a9d"
             },
             "require": {
@@ -375,7 +375,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "prevailexcel/laravel-nowpayments-local",
+                "url": "./prevailexcel/laravel-nowpayments-local",
                 "reference": "5425096136eb42ee3dd2f9b78300d32c17a4fc76"
             },
             "require": {
@@ -638,7 +638,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "saeedpooyanfar/zarinpal-local",
+                "url": "./saeedpooyanfar/zarinpal-local",
                 "reference": "e60b67e877709d6487bc8e8cc88477847ecd56b0"
             },
             "require": {
