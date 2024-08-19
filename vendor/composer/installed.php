@@ -3,7 +3,7 @@
         'name' => 'blognevis/payments',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'dc2222780dd45c40b3b2b974de2d4553ad2814aa',
+        'reference' => 'ae90d4a0f5cd2a7ca5366596e92b9fc74670414c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'blognevis/payments' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'dc2222780dd45c40b3b2b974de2d4553ad2814aa',
+            'reference' => 'ae90d4a0f5cd2a7ca5366596e92b9fc74670414c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

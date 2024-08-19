@@ -382,7 +382,7 @@
             "version_normalized": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "./prevailexcel/laravel-nowpayments-local",
+                "url": "./prevailexcel2/laravel-nowpayments-local",
                 "reference": "624df3dc65d4a345aa17935a9649446199fa590a"
             },
             "require": {

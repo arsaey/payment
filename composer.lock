@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "313c9a97f226a1fc35f11fad8af47aca",
+    "content-hash": "5c7c17d9bfa8ab503dd14f9d61e7d7c4",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -375,7 +375,7 @@
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "./prevailexcel/laravel-nowpayments-local",
+                "url": "./prevailexcel2/laravel-nowpayments-local",
                 "reference": "624df3dc65d4a345aa17935a9649446199fa590a"
             },
             "require": {
