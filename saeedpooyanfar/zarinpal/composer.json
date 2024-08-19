@@ -1,5 +1,5 @@
 {
-    "name": "saeedpooyanfar/zarinpal-local",
+    "name": "saeedpooyanfar/zarinpal",
     "type": "library",
     "description": "Zarinpal payment for Laravel Framework (with sandbox support)",
     "keywords": ["zarinpal", "payment", "laravel", "framework"],

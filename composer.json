@@ -29,7 +29,7 @@
         }
     ],
     "require": {
-        "prevailexcel2/laravel-nowpayments-local": "dev-master",
+
         "plisio/plisio-sdk-laravel-local": "dev-master",
         "saeedpooyanfar/zarinpal-local": "dev-master"
     }
