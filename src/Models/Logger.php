@@ -1,6 +1,6 @@
 <?php
 
-namespace Blognevis\Payments;
+namespace Blognevis\Payments\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

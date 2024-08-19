@@ -1,10 +1,10 @@
 <?php
 
-namespace PrevailExcel\Nowpayments\Http\Controllers;
+namespace Blognevis\Payments\Http\Controllers;
 
 use Blognevis\Payments\Logger as PaymentsLogger;
 use Illuminate\Http\Request;
-use PrevailExcel\Nowpayments\Logger;
+use Blognevis\Payments\Models\Logger;
 
 /*
  * This file is part of the Laravel NOWPayments package.

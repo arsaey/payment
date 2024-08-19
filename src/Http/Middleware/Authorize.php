@@ -1,6 +1,6 @@
 <?php
 
-namespace PrevailExcel\Nowpayments\Http\Middleware;
+namespace Blognevis\Payments\Http\Middleware;
 
 use Illuminate\Support\Facades\Gate;
 
