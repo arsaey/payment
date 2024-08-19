@@ -3,7 +3,7 @@
         'name' => 'blognevis/payments',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '3f41ded3beae19148ae3e41b364f03506586efbe',
+        'reference' => 'f186cc48e6a6f4791b456f4c212e1a8d5d144cd7',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'blognevis/payments' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '3f41ded3beae19148ae3e41b364f03506586efbe',
+            'reference' => 'f186cc48e6a6f4791b456f4c212e1a8d5d144cd7',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -55,12 +55,12 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-        'prevailexcel/laravel-nowpayments' => array(
+        'prevailexcel/lnowpayments' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '828bd61bea33a5d2dc6b97fb77dcb26a9311def4',
+            'reference' => 'c6f6e6df1ff01473ee63ebdf2201450b1fe3314e',
             'type' => 'library',
-            'install_path' => __DIR__ . '/../prevailexcel/laravel-nowpayments',
+            'install_path' => __DIR__ . '/../prevailexcel/lnowpayments',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

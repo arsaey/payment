@@ -380,13 +380,13 @@
             "install-path": "../plisio/plisio-sdk-laravel"
         },
         {
-            "name": "prevailexcel/laravel-nowpayments",
+            "name": "prevailexcel/lnowpayments",
             "version": "dev-main",
             "version_normalized": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "prevailexcel2/laravel-nowpayments",
-                "reference": "828bd61bea33a5d2dc6b97fb77dcb26a9311def4"
+                "url": "prevailexcel/laravel-nowpayments",
+                "reference": "c6f6e6df1ff01473ee63ebdf2201450b1fe3314e"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.0.1"
@@ -439,7 +439,7 @@
             "transport-options": {
                 "relative": true
             },
-            "install-path": "../prevailexcel/laravel-nowpayments"
+            "install-path": "../prevailexcel/lnowpayments"
         },
         {
             "name": "psr/http-client",

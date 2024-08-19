@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "defed7d0c227b3fecc75b5a893308545",
+    "content-hash": "9ed0b4a6d8623dfcaa72ebffc9d302c2",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -374,12 +374,12 @@
             }
         },
         {
-            "name": "prevailexcel/laravel-nowpayments",
+            "name": "prevailexcel/lnowpayments",
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "prevailexcel2/laravel-nowpayments",
-                "reference": "828bd61bea33a5d2dc6b97fb77dcb26a9311def4"
+                "url": "prevailexcel/laravel-nowpayments",
+                "reference": "c6f6e6df1ff01473ee63ebdf2201450b1fe3314e"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.0.1"
@@ -758,7 +758,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "plisio/plisio-sdk-laravel": 20,
-        "prevailexcel/laravel-nowpayments": 20,
+        "prevailexcel/lnowpayments": 20,
         "saeedpooyanfar/zarinpal": 20
     },
     "prefer-stable": false,
