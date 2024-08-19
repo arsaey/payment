@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'path' => 'laravel-payments',
+    'path' => 'blognevis-payments',
     'dashboard_key' => 'password',
     'zarinpal' => [
         /*
