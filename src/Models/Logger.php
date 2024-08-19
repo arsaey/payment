@@ -17,9 +17,10 @@ use Illuminate\Database\Eloquent\Model;
 class Logger extends Model
 {
   use HasFactory;
+
   protected $fillable = [
-    'endpoint', 'count'
+    'gateway', 'status', 'amount'
   ];
-  protected $table = 'payments_logger';
+  protected $table = 'payment_logs';
 
 }
