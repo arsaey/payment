@@ -1,5 +1,5 @@
 {
-    "name": "plisio/plisio-sdk-laravel",
+    "name": "blognevis/plisio-sdk-laravel",
     "description": "SDK package for building your own payment gateway using Plisio API.",
     "type": "sdk",
     "license": "MIT",
@@ -8,12 +8,6 @@
             "Plisio\\PlisioSdkLaravel\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "plisdeveloper",
-            "email": "plugins@plisio.net"
-        }
-    ],
     "require": {
         "php": ">=7.3",
         "ext-curl": "*"

@@ -14,24 +14,9 @@
         }
     },
     "minimum-stability": "dev",    
-    "repositories": [
-        {
-            "type": "path",
-            "url": "prevailexcel/laravel-nowpayments"
-        },
-        {
-            "type": "path",
-            "url": "plisio/plisio-sdk-laravel"
-        },
-        {
-            "type": "path",
-            "url": "saeedpooyanfar/zarinpal"
-        }
-    ],
     "require": {
-
-        "plisio/plisio-sdk-laravel": "dev-main",
-        "prevailexcel/lnowpayments":"dev-main",
-        "saeedpooyanfar/zarinpal": "dev-main"
+        "blognevis/plisio-sdk-laravel": "0.0.1",
+        "blognevis/lnowpayments":"0.0.1",
+        "blognevis/zarinpal": "0.0.1"
     }
 }			
