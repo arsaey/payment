@@ -14,7 +14,7 @@ use Blognevis\Payments\Http\Middleware\Authorize;
  */
 
 Route::group([
-	'prefix'  =>  config('payments.nowpayments.path', 'laravel-nowpayments'),
+	'prefix'  =>  config('payments.nowpayments.path', 'blognevis-payments'),
 	'middleware' => config('payments.nowpayments.middleware', [Authorize::class]),
 ], function () {
 	Route::get('/', DashboardController::class)->name('payments.dashboard');
