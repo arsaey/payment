@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
 
-class CreatePaymentsLoggerTable extends Migration
+class CreatePaymentLogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class CreatePaymentsLoggerTable extends Migration
      */
     public function up()
     {
-        Schema::create('payments_logger', function (Blueprint $table) {
+        Schema::create('payment_logs', function (Blueprint $table) {
             $table->id();
             $table->string('gateway');
             $table->string('status');
@@ -30,6 +30,6 @@ class CreatePaymentsLoggerTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('payments_logger');
+        Schema::dropIfExists('payment_logs');
     }
 };
