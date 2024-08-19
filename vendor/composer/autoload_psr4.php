@@ -6,11 +6,11 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Zarinpal\\' => array($vendorDir . '/saeedpooyanfar/zarinpal-local/src'),
+    'Zarinpal\\' => array($vendorDir . '/saeedpooyanfar/zarinpal/src'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
     'Psr\\Http\\Client\\' => array($vendorDir . '/psr/http-client/src'),
-    'PrevailExcel\\Nowpayments\\' => array($vendorDir . '/prevailexcel/laravel-nowpayments-local/src'),
-    'Plisio\\PlisioSdkLaravel\\' => array($vendorDir . '/plisio/plisio-sdk-laravel-local/src'),
+    'PrevailExcel\\Nowpayments\\' => array($vendorDir . '/prevailexcel/laravel-nowpayments/src'),
+    'Plisio\\PlisioSdkLaravel\\' => array($vendorDir . '/plisio/plisio-sdk-laravel/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),

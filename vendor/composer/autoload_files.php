@@ -9,5 +9,5 @@ return array(
     '7b11c4dc42b3b3023073cb14e519683c' => $vendorDir . '/ralouphie/getallheaders/src/getallheaders.php',
     '6e3fae29631ef280660b3cdad06f25a8' => $vendorDir . '/symfony/deprecation-contracts/function.php',
     '37a3dc5111fe8f707ab4c132ef1dbc62' => $vendorDir . '/guzzlehttp/guzzle/src/functions_include.php',
-    '0a2a165e21f79acdd3a2680b7ab453e1' => $vendorDir . '/prevailexcel/laravel-nowpayments-local/utils/helpers/nowpayments.php',
+    '7c85b489815bd8b5ec4256895b1d300d' => $vendorDir . '/prevailexcel/laravel-nowpayments/utils/helpers/nowpayments.php',
 );

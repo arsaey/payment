@@ -1,5 +1,5 @@
 {
-    "name": "prevailexcel/laravel-nowpayments-local", 
+    "name": "prevailexcel/laravel-nowpayments", 
     "description": "A Laravel Package for NOWPayments",
     "keywords": [
       "php",
