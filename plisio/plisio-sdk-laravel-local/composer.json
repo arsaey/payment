@@ -1,5 +1,5 @@
 {
-    "name": "plisio/plisio-sdk-laravel",
+    "name": "plisio/plisio-sdk-laravel-local",
     "description": "SDK package for building your own payment gateway using Plisio API.",
     "type": "sdk",
     "license": "MIT",
