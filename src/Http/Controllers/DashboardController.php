@@ -2,7 +2,7 @@
 
 namespace Blognevis\Payments\Http\Controllers;
 
-use Blognevis\Payments\Logger as PaymentsLogger;
+use Blognevis\Payments\Models\Logger as PaymentsLogger;
 use Illuminate\Http\Request;
 use Blognevis\Payments\Models\Logger;
 
