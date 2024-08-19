@@ -1,6 +1,174 @@
 {
     "packages": [
         {
+            "name": "blognevis/lnowpayments",
+            "version": "0.0.1",
+            "version_normalized": "0.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/arsaey/nowpayments.git",
+                "reference": "8ecf2b4cd51250131d33be2122cfbceb518d4ca2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/arsaey/nowpayments/zipball/8ecf2b4cd51250131d33be2122cfbceb518d4ca2",
+                "reference": "8ecf2b4cd51250131d33be2122cfbceb518d4ca2",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.0.1"
+            },
+            "time": "2024-08-19T04:39:24+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "PrevailExcel\\Nowpayments\\NowpaymentsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Nowpayments": "PrevailExcel\\Nowpayments\\Facades\\Nowpayments"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "files": [
+                    "utils/helpers/nowpayments.php"
+                ],
+                "psr-4": {
+                    "PrevailExcel\\Nowpayments\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PrevailExcel",
+                    "email": "prevailexcellent@gmail.com"
+                }
+            ],
+            "description": "A Laravel Package for NOWPayments",
+            "keywords": [
+                "crypto",
+                "crypto payments",
+                "github",
+                "laravel",
+                "laravel 6",
+                "laravel 7",
+                "laravel 8",
+                "laravel 9",
+                "nowpayments",
+                "open source",
+                "payments",
+                "php",
+                "subscription"
+            ],
+            "support": {
+                "issues": "https://github.com/arsaey/nowpayments/issues",
+                "source": "https://github.com/arsaey/nowpayments/tree/0.0.1"
+            },
+            "install-path": "../blognevis/lnowpayments"
+        },
+        {
+            "name": "blognevis/plisio-sdk-laravel",
+            "version": "0.0.1",
+            "version_normalized": "0.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/arsaey/pliso.git",
+                "reference": "9f8049ffbf5b0e8b7125936d4c8ad8b7da604eed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/arsaey/pliso/zipball/9f8049ffbf5b0e8b7125936d4c8ad8b7da604eed",
+                "reference": "9f8049ffbf5b0e8b7125936d4c8ad8b7da604eed",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=7.3"
+            },
+            "time": "2024-08-19T04:32:59+00:00",
+            "type": "sdk",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Plisio\\PlisioSdkLaravel\\Providers\\PlisioProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Plisio\\PlisioSdkLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "SDK package for building your own payment gateway using Plisio API.",
+            "support": {
+                "issues": "https://github.com/arsaey/pliso/issues",
+                "source": "https://github.com/arsaey/pliso/tree/0.0.1"
+            },
+            "install-path": "../blognevis/plisio-sdk-laravel"
+        },
+        {
+            "name": "blognevis/zarinpal",
+            "version": "0.0.1",
+            "version_normalized": "0.0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/arsaey/zarinpal.git",
+                "reference": "7c0013a507fa9eb7965d05c57a194da3b77c8cfd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/arsaey/zarinpal/zipball/7c0013a507fa9eb7965d05c57a194da3b77c8cfd",
+                "reference": "7c0013a507fa9eb7965d05c57a194da3b77c8cfd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "^7.2.0",
+                "php": "^7.4|^8.0"
+            },
+            "time": "2024-08-19T04:35:40+00:00",
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Zarinpal\\ZarinpalServiceProvider"
+                    ]
+                }
+            },
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Zarinpal\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Zarinpal payment for Laravel Framework (with sandbox support)",
+            "keywords": [
+                "framework",
+                "laravel",
+                "payment",
+                "zarinpal"
+            ],
+            "support": {
+                "issues": "https://github.com/arsaey/zarinpal/issues",
+                "source": "https://github.com/arsaey/zarinpal/tree/0.0.1"
+            },
+            "install-path": "../blognevis/zarinpal"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "7.9.x-dev",
             "version_normalized": "7.9.9999999.9999999-dev",
@@ -338,110 +506,6 @@
             "install-path": "../guzzlehttp/psr7"
         },
         {
-            "name": "plisio/plisio-sdk-laravel",
-            "version": "dev-main",
-            "version_normalized": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "plisio/plisio-sdk-laravel",
-                "reference": "ad6d5a48eb0507df843795a6262a6fc9e5391e9e"
-            },
-            "require": {
-                "ext-curl": "*",
-                "php": ">=7.3"
-            },
-            "type": "sdk",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Plisio\\PlisioSdkLaravel\\Providers\\PlisioProvider"
-                    ]
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Plisio\\PlisioSdkLaravel\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "plisdeveloper",
-                    "email": "plugins@plisio.net"
-                }
-            ],
-            "description": "SDK package for building your own payment gateway using Plisio API.",
-            "transport-options": {
-                "relative": true
-            },
-            "install-path": "../plisio/plisio-sdk-laravel"
-        },
-        {
-            "name": "prevailexcel/lnowpayments",
-            "version": "dev-main",
-            "version_normalized": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "prevailexcel/laravel-nowpayments",
-                "reference": "c6f6e6df1ff01473ee63ebdf2201450b1fe3314e"
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^7.0.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "PrevailExcel\\Nowpayments\\NowpaymentsServiceProvider"
-                    ],
-                    "aliases": {
-                        "Nowpayments": "PrevailExcel\\Nowpayments\\Facades\\Nowpayments"
-                    }
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "files": [
-                    "utils/helpers/nowpayments.php"
-                ],
-                "psr-4": {
-                    "PrevailExcel\\Nowpayments\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PrevailExcel",
-                    "email": "prevailexcellent@gmail.com"
-                }
-            ],
-            "description": "A Laravel Package for NOWPayments",
-            "keywords": [
-                "Nowpayments",
-                "Open Source",
-                "crypto",
-                "crypto payments",
-                "github",
-                "laravel",
-                "laravel 6",
-                "laravel 7",
-                "laravel 8",
-                "laravel 9",
-                "payments",
-                "php",
-                "subscription"
-            ],
-            "transport-options": {
-                "relative": true
-            },
-            "install-path": "../prevailexcel/lnowpayments"
-        },
-        {
             "name": "psr/http-client",
             "version": "dev-master",
             "version_normalized": "dev-master",
@@ -658,56 +722,6 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "install-path": "../ralouphie/getallheaders"
-        },
-        {
-            "name": "saeedpooyanfar/zarinpal",
-            "version": "dev-main",
-            "version_normalized": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "saeedpooyanfar/zarinpal",
-                "reference": "a0dbacb551f6977a30351391594a67ee480f5c3d"
-            },
-            "require": {
-                "ext-json": "*",
-                "guzzlehttp/guzzle": "^7.2.0",
-                "php": "^7.4|^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Zarinpal\\ZarinpalServiceProvider"
-                    ]
-                }
-            },
-            "installation-source": "dist",
-            "autoload": {
-                "psr-4": {
-                    "Zarinpal\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Saeed Pooyanfar",
-                    "email": "saeedp47@gmail.com",
-                    "homepage": "https://github.com/Saeed-Pooyanfar"
-                }
-            ],
-            "description": "Zarinpal payment for Laravel Framework (with sandbox support)",
-            "keywords": [
-                "framework",
-                "laravel",
-                "payment",
-                "zarinpal"
-            ],
-            "transport-options": {
-                "relative": true
-            },
-            "install-path": "../saeedpooyanfar/zarinpal"
         },
         {
             "name": "symfony/deprecation-contracts",

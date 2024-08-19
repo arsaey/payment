@@ -2,7 +2,7 @@
 
 return [
     'path' => 'laravel-payments',
-    'dashboard_key' => 'password'
+    'dashboard_key' => 'password',
     'zarinpal' => [
         /*
     |--------------------------------------------------------------------------
