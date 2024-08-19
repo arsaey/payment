@@ -9,7 +9,7 @@ class NowPaymentsGateway
 
     public function pay($params)
     {
-        $nowPaymentResponse = NowpaymentFacade::createPayment($params);
+        $nowPaymentResponse = NowpaymentFacade::createInvoice($params);
         return ['msg' => "Payment created successfully", 'type' => 'success', 'data' => $nowPaymentResponse];
 
     }
