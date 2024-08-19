@@ -29,8 +29,8 @@
         }
     ],
     "require": {
-        "prevailexcel/laravel-nowpayments-local": "dev-main",
-        "plisio/plisio-sdk-laravel-local": "dev-main",
-        "saeedpooyanfar/zarinpal-local": "dev-main"
+        "prevailexcel/laravel-nowpayments-local": "dev-master",
+        "plisio/plisio-sdk-laravel-local": "dev-master",
+        "saeedpooyanfar/zarinpal-local": "dev-master"
     }
 }
