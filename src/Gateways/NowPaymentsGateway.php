@@ -14,7 +14,7 @@ class NowPaymentsGateway
         $nowPaymentResponse = NowpaymentFacade::createInvoice($params);
 
         Logger::create([
-            'payment_id' => $nowPaymentResponse['payment_id'],
+            'payment_id' => $nowPaymentResponse['id'],
             'status' => 'waiting',
             'gateway' => 'nowpayment',
             'amount' => $nowPaymentResponse['price_amount']
