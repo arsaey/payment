@@ -17,8 +17,9 @@ class CreatePaymentLogsTable extends Migration
         Schema::create('payment_logs', function (Blueprint $table) {
             $table->id();
             $table->string('gateway');
+            $table->string('payment_id');
             $table->string('status');
-            $table->string('amount');
+            $table->string('amount');        
             $table->timestamps();
         });
     }

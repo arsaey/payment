@@ -2,6 +2,7 @@
 
 namespace Blognevis\Payments\Gateways;
 
+use Blognevis\Payments\Models\Logger;
 use Blognevis\Payments\PlisioPaymentFacade;
 
 class PlisioGateway
@@ -10,24 +11,30 @@ class PlisioGateway
     {
         $response = PlisioPaymentFacade::createTransaction($data);
 
-        //Check the response and, depending on the result, redirect the user to Plisio for further payment or return to the checkout page with an error.
-        if ($response && $response['status'] !== 'error' && !empty($response['data'])) {
-            return ['msg' => "Payment created successfully", 'type' => 'success', 'data' => $response['data']['invoice_url']];
-        } else {
-            $errorMessage = implode(',', json_decode($response['data']['message'], true));
-        }
+        Logger::create([
+            'payment_id' => $response['payment_id'],
+            'status' => 'waiting',
+            'gateway' => 'plisio',
+            'amount' => $response['data']['amount']
+        ]);
 
+        return ['msg' => "Payment created successfully", 'payment_url' => $response['data']['invoice_url'], 'type' => 'success', 'other_data' => $response];
     }
 
     public function verify($data)
     {
+        // data=$post
         //callback.php
-        $callbackData = $_POST;
+        $callbackData = $data;
 
-        if (PlisioPaymentFacade::verifyCallbackData($callbackData)) {
-            //Change invoice status, notify user etc.
-        } else {
-            //HTTP 403 error. Callback data is not valid!
+        $validated = PlisioPaymentFacade::verifyCallbackData($callbackData);
+        if ($validated) {
+            Logger::where('payment_id', $callbackData['txn_id'])->update([
+                'status' => $$callbackData['status']
+            ]);
+            return ['is_complete_payment' => $callbackData['status']=='completed', 'status' => $callbackData['status'], 'other_data' => $callbackData];
         }
+        throw new \Exception("Error, Code: " . 403 . ", Message: " . 'not a valid response' . "}");
+
     }
 }

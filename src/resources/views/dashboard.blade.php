@@ -1,21 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--
-    * This file is part of the Laravel NOWPayments package.
-    *
-    * (c) Prevail Ejimadu <prevailexcellent@gmail.com>
-    *
-    * For the full copyright and license information, please view the LICENSE
-    * file that was distributed with this source code.
-    */ 
--->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Laravel NOWPayment</title>
+    <title>Laravel Payments</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
@@ -87,23 +77,6 @@
             <section class="tab-content">
                 <section class="tab-pane active fade in content" id="dashboard">
                     <div class="row">
-                        <div class="col-xs-6 col-sm-2">
-                            <div class="panel panel-primary border">
-                                <div class="panel-body">
-                                    <h5>API Status: <b>ON</b></h5>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-6 col-sm-2 offset-sm-10">
-                            <div class="panel panel-primary border">
-                                <div class="panel-body">
-                                    <h5>Enviroment: <b
-                                            style="text-transform: capitalize">{{ config('payments.nowpayments.env') }}</b></h5>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="col-xs-12 col-sm-3">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -111,13 +84,18 @@
                                 </div>
                                 <ul class="list-group">
                                     @foreach ($logs as $log)
-                                        <li class="list-group-item">{{ $log->endpoint }} <span
-                                                class="float-right badge badge-secondary">{{ $log->count }}</span>
+                                        <li class="list-group-item">
+                                        
+                                        {{ $log->gateway }} 
+                                        <span
+                                                class="float-right badge badge-secondary">{{ $log->amount }}</span>
+                                    
+                                        <span
+                                                class="float-right badge badge-secondary">{{ $log->status }}</span>
                                         </li>
                                     @endforeach
                                 </ul>
                             </div>
-
                         </div>
                     </div>
                 </section>
