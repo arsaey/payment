@@ -16,7 +16,7 @@ class NowPaymentsGateway
         Logger::create([
             'payment_id' => $nowPaymentResponse['id'],
             'status' => 'waiting',
-            'gateway' => 'nowpayment',
+            'gateway' => 'nowpayments',
             'amount' => $nowPaymentResponse['price_amount']
         ]);
 
@@ -27,7 +27,7 @@ class NowPaymentsGateway
     public function verify($data)
     {
         $res = NowpaymentFacade::getPaymentStatus($data);
-        Logger::where('payment_id', $res['payment_id'])->update([
+        Logger::where('gateway','nowpayments')->where('payment_id', $res['invoice_id'])->update([
             'status' => $res['payment_status']
         ]);
         return ['is_complete_payment'=>in_array($res['payment_status'],['confirmed','sending','finished']),'status' => $res['payment_status'], 'other_data' => $res];

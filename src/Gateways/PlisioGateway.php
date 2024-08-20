@@ -10,7 +10,9 @@ class PlisioGateway
     public function pay($data)
     {
         $response = PlisioPaymentFacade::createTransaction($data);
-
+        if($response['status']=='error'){
+            throw new \Exception("Error, ".$response['data']['name'].':'.$response['data']['message']);
+        }
         Logger::create([
             'payment_id' => $response['payment_id'],
             'status' => 'waiting',
