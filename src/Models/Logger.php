@@ -18,7 +18,7 @@ class Logger extends Model
 {
   use HasFactory;
   protected $fillable = [
-    'gateway', 'payment_id', 'status'
+    'gateway', 'payment_id', 'status','amount'
   ];
   protected $table = 'payment_logs';
 
